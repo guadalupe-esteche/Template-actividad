@@ -1,0 +1,246 @@
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181821;
+    color: white;
+    padding: 10px 120px;
+}
+
+header img {
+    height: 50px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    /* Elimina los puntos de la lista */
+    display: flex;
+    /* Muestra los elementos en fila */
+}
+
+nav ul li {
+    padding: 10px 15px;
+    /* Espacio interno */
+    border: 1px solid #333;
+    /* Borde del rectángulo */
+    background-color: #1f241f;
+}
+
+/* Redondea solo el primer y último botón */
+nav ul li:first-child {
+    border-radius: 20px 0 0 20px; /* Bordes redondeados solo en la esquina superior izquierda e inferior izquierda */
+}
+
+nav ul li:last-child {
+    border-radius: 0 20px 20px 0; /* Bordes redondeados solo en la esquina superior derecha e inferior derecha */
+}
+
+nav ul li:hover{
+    background-color: #a5c730;
+}
+
+.divisor {
+    border: none;
+    /* Elimina la línea predeterminada */
+    border-top: 5px solid #a5c730;
+    /* Añade una línea superior de 3px de grosor y color verde */
+    margin: 0;
+    /* Ajusta el margen si es necesario */
+}
+
+.paisaje {
+    width: 400px;
+    /*ancho*/
+    height: 200px;
+    /*altura*/
+    margin-right: 20px;
+}
+
+.seccion1 {
+    padding: 20px;
+    background-color: #49455a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenido {
+    max-width: 500px;
+}
+
+.contenido h2 {
+    margin: 0 0 10px 0;
+    color: white;
+}
+
+.contenido p {
+    margin-bottom: 10px;
+    color: #d4d9b7;
+}
+
+button {
+    background-color: #a5c730;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #181821;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* Asegura un espacio equitativo entre los elementos */
+    padding: 80px;
+}
+
+#bienvenida,
+#nuevas-noticias {
+    box-sizing: border-box;
+    /* Asegura que el padding se incluya dentro del ancho total */
+    padding: 10px;
+    /* Añade padding interno para espacio */
+    margin-bottom: 20px;
+    /* Añade espacio debajo de cada sección */
+    height: auto;
+    min-height: 300px;
+}
+
+#bienvenida{
+    width: 70%;
+}
+
+#nuevas-noticias{
+    width: 30%;
+}
+
+table.tabla-noticias {
+    max-width: 600px;
+    min-height: 300px;
+}
+
+/*encabezado de tabla*/
+.tabla-noticias th {
+    display: flex;
+    background-color: #181821;
+    color: white;
+    font-size: 1.1em;
+    justify-content: left;
+    padding: 10px;
+    height: 50px;
+    width: 350px;
+}
+
+.tabla-noticias td {
+    background-color: #d4d9b7;
+    padding: 10px;
+    font-size: 0.9em;
+    width: 350px;
+}
+
+.tabla-noticias td:hover {
+    background-color: #b7afb1;
+}
+
+#bienvenida p {
+    margin-bottom: 20px;
+    /* Espacio inferior entre párrafos */
+    line-height: 1.6;
+    /* Espaciado entre líneas */
+    position: relative;
+    /* Necesario para la barra vertical */
+}
+
+#bienvenida a {
+    color: #181821;
+}
+
+.barra-vertical {
+    position: relative;
+    /* Necesario para posicionar la barra */
+    padding-left: 20px;
+    /* Espacio para la barra */
+}
+
+.barra-vertical::before {
+    content: "";
+    position: absolute;
+    /* Posiciona la barra de forma absoluta */
+    left: 0;
+    /* Posiciona la barra a la izquierda del párrafo */
+    top: 0;
+    width: 5px;
+    /* Ancho de la barra */
+    height: 100%;
+    /* Hace que la barra cubra la altura completa del párrafo */
+    background-color: #a0c933;
+    /* Color verde de la barra */
+}
+
+footer {
+    background-color: #1f241f;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.info-footer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button.boton-footer {
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+}
+
+.seccion-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    padding: 5px;
+}
+
+.seccion-footer ul {
+    margin-right: 10px;
+    align-items: center;
+}
+
+.seccion-footer ul li{
+    list-style: none;
+    margin-bottom: 10px; /* Agrega espacio debajo de cada elemento de la lista */
+}
+
+.seccion-footer li a{
+    text-decoration: none;
+    color: white;
+}
+
+.seccion-footer li a:hover {
+    color: #a5c730;
+}
